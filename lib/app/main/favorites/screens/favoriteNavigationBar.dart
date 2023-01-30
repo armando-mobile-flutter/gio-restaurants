@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:gio_restaurants/app/main/favorites/screens/index.dart';
 
 class FavoriteNavigationBar extends StatelessWidget {
   const FavoriteNavigationBar({super.key});
@@ -17,13 +18,8 @@ class FavoriteNavigationBar extends StatelessWidget {
           ),
           SliverFillRemaining(
               child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: const <Widget>[
-              Text(
-                'Drag me up',
-                textAlign: TextAlign.center,
-              )
-            ],
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[FavoriteList()],
           ))
         ],
       ));
