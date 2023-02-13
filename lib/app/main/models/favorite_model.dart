@@ -20,7 +20,7 @@ class FavoriteModel {
 
   // Create iterator map from model
   Map<String, dynamic> toMap() {
-    var map = Map<String, dynamic>();
+    var map = <String, dynamic>{};
 
     map['restaurantName'] = _restaurantName;
     map['address'] = _address;

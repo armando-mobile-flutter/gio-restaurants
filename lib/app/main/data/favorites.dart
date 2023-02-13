@@ -1,5 +1,4 @@
-import 'package:gio_restaurants/app/main/models/favoriteModel.dart';
-import 'package:gio_restaurants/app/main/models/index.dart';
+import 'package:gio_restaurants/app/main/models/favorite_model.dart';
 
 class FavoritesController {
   List<FavoriteModel> getFavorites() => <FavoriteModel>[

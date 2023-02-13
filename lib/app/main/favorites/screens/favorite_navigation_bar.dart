@@ -17,10 +17,11 @@ class FavoriteNavigationBar extends StatelessWidget {
             trailing: Icon(CupertinoIcons.add_circled),
           ),
           SliverFillRemaining(
+              fillOverscroll: true,
               child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: <Widget>[FavoriteList()],
-          ))
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[FavoriteList()],
+              ))
         ],
       ));
 }

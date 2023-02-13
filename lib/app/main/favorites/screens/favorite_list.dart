@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:gio_restaurants/app/main/models/favoriteModel.dart';
 import 'package:gio_restaurants/app/main/models/index.dart';
 import 'package:gio_restaurants/app/main/data/favorites.dart';
 

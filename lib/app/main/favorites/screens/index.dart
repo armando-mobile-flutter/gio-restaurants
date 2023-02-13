@@ -1,2 +1,2 @@
-export 'package:gio_restaurants/app/main/favorites/screens/favoriteNavigationBar.dart';
-export 'package:gio_restaurants/app/main/favorites/screens/favoriteList.dart';
+export 'package:gio_restaurants/app/main/favorites/screens/favorite_navigation_bar.dart';
+export 'package:gio_restaurants/app/main/favorites/screens/favorite_list.dart';
