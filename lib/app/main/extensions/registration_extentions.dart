@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:gio_restaurants/app/main/providers/preference_provider.dart';
-import 'package:gio_restaurants/app/main/repositories/preferences_repository.dart';
+import 'package:gio_restaurants/app/main/repositories/index.dart';
 import 'package:provider/provider.dart';
 import 'package:gio_restaurants/app/main/providers/index.dart';
 import 'package:provider/single_child_widget.dart';
@@ -32,6 +31,10 @@ class ChangeNotifierProviderRegistration {
   static List<SingleChildWidget> changeNotifierProviders = <SingleChildWidget>[
     ChangeNotifierProvider(
         create: (_) =>
-            PreferenceProvider(preferencesRepository: PreferencesRepository()))
+            PreferenceProvider(preferencesRepository: PreferencesRepository())),
+    ChangeNotifierProvider(
+        create: (_) =>
+            FavoriteProvider(favoriteRepository: FavoriteRepository())),
+    ChangeNotifierProvider(create: (_) => CounterProvider())
   ];
 }

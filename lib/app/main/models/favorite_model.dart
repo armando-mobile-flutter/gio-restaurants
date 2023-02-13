@@ -13,6 +13,7 @@ class FavoriteModel {
   String get address => _address;
   bool get status => _status;
 
+  set id(int id) => _id = id;
   set restaurantName(String name) =>
       (_restaurantName = name.length >= 30 ? name.substring(0, 30) : name);
   set address(String address) => _address = address;
